@@ -1,0 +1,22 @@
+.flex {
+  display: flex; 
+}
+.row {
+  display: flex; 
+  flex-direction:row
+}
+.column {
+  display: flex; 
+  flex-direction:column
+}
+
+.no-bullets li {
+  display: block;
+}
+
+.hr-center{
+  align-items: center;
+}
+.vr-center{
+  justify-content: center;
+}

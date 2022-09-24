@@ -1,0 +1,105 @@
+body {
+	margin: 0;
+	font-family: Poppins;
+}
+.nav-logo {
+	color: #20c997;
+	font-weight: 1000;
+}
+nav {
+	justify-content: space-between;
+	align-items: center;
+	color: #20c997;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+nav li {
+	margin: 10px 15px;
+}
+.nav-button {
+	background-color: #20c997;
+	color: white;
+	padding: 15px 50px;
+	border-radius: 5px;
+	display: inline-block;
+	border: none;
+}
+.btn {
+	background-color: #20c997;
+	color: white;
+	padding: 15px 40px;
+	border-radius: 15px;
+	display: inline-block;
+	border: none;
+}
+.btn-2 {
+	background-color: #20c997;
+	color: white;
+	padding: 15px 50px;
+
+	display: inline-block;
+	border: none;
+}
+
+main {
+	margin-top: 50px;
+}
+.section-1 {
+	/* I noticed that this align kept the button from being a block element */
+	align-items: flex-start;
+	width: 45%;
+	margin-left: 60px;
+}
+.heading {
+	color: #20c997;
+	font-size: 3.5em;
+	margin-bottom: 0;
+	font-weight: 500;
+}
+p {
+	color: grey;
+}
+.section-2 {
+	width: 55%;
+}
+
+.img {
+	/* Circle Properties */
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+
+	/* Image Setting */
+	/* the image div must contain some elements to be able to display the image */
+	background: url("../images/kids.jpg");
+	/* combining background position and background size will ensure that 
+  no matter how the window is adjusted, the bottom wont be cropped out and the image will coover the 
+  whole background */
+	background-size: cover;
+	background-position: bottom;
+}
+/* 
+hmm we didnt add the pseudo element direvvctly to an image
+we added it to a div which haas a background */
+/* this is because, pseudo(before and after) cant be addded to images */
+.img:before {
+	content: "";
+	width: 550px;
+	height: 550px;
+	background: #38d9a9;
+	position: absolute;
+	border-radius: 50%;
+	z-index: -1;
+	opacity: 0.1;
+}
+
+.img:after {
+	content: "";
+	width: 600px;
+	height: 600px;
+	background: #38d9a9;
+	opacity: 0.2;
+	position: absolute;
+	border-radius: 50%;
+	z-index: -2;
+}
